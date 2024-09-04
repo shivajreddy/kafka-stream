@@ -22,5 +22,7 @@ query = "Tweepy -is:retweet"
 # The default granularity, if not specified is hour
 response = client.get_recent_tweets_count(query, granularity="day")
 
+# -> == >= === ==>
+
 for count in response.data:
     print(count)
